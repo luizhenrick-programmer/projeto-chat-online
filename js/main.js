@@ -35,4 +35,9 @@ const handleSubmit = (event) => {
     console.log(user)
 }
 
+const sendMessage = (event) => {
+    event.preventDefault()
+}
+
 loginForm.addEventListener("submit", handleSubmit)
+chatForm.addEventListener("submit", sendMessage)
